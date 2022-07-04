@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #1d1e1f;
+  
+    -webkit-font-smoothing: antialiased;
+  
+    background-color: #fff;
+}
+  
+html, body {
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+  
+p {
+    margin: 0 0;
+}
+
+.works {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    max-width: 800px;
+    background-color: #1d1e1f;
+    margin: 0 auto;
+}
+
+.works__item { 
+    padding-top: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.works__photo {
+    max-width: 554px;
+    border: 1px #fff solid;
+}
+
+.works__title {
+    margin: 10px 0;
+  
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+  
+.works__text {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.works__content {
+    width: 554px;
+}
+
+.works__info {
+
+    font-size: 13px;
+    color: #fff;
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 40px;
+  
+    background-color: #fff;
+    border: #1d1e1f 2px solid;
+    cursor: pointer;
+  
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1d1e1f;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+  
+    transition: color 0.2s linear;
+    transition: background-color 0.2s linear;
+}
+  
+.btn:hover {
+    opacity: 1;
+    color: #fff;
+    background-color: #1d1e1f;
+}
+
+@media (max-width: 575px) {
+
+    .works__photo {
+        width: 400px;
+    }
+
+    .works__content {
+        width: 400px;
+    }
+
+    .works__item { 
+        padding-top: 70px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .works__photo {
+        width: 300px;
+    }
+
+    .works__content {
+        width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .works__photo {
+        width: 250px;
+    }
+
+    .works__content {
+        width: 250px;
+    }
+
+    .btn {
+        padding: 15px 25px;
+    }
+}

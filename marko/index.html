@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FavIcons -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Marko</title>
+</head>
+
+<body>
+
+<!-- Sprite -->
+
+<svg style="display: none;">
+    <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+            <path d="M4,440.5c55.6,5,105.7-9,151.3-43.2c-47.7-4.2-79.6-28-97.4-72.6c15.6,1.9,30.2,2.4,45.7-1.8
+                c-51.4-16-78.8-49.6-82.5-103.8c15.4,7.2,29.9,12.4,47,12.6c-30.5-22.9-46.1-52.6-45.5-90c0.3-17.2,4.9-33.4,14-48.7
+                C93.1,159.1,164,195.7,251.3,201.8c-0.5-3.8-0.8-6.8-1.2-9.9c-7.2-55.4,28.8-105.8,83.8-116.3c34.5-6.6,65,2.5,90.8,26.3
+                c4,3.6,7.4,4.4,12.4,3.1c20.1-5.1,39.2-12.5,57.7-22.5c-7.1,23.4-21.7,41-41.5,55.8c4.5-0.8,9.1-1.4,13.6-2.3
+                c4.7-1,9.4-2.1,14.1-3.4c4.5-1.2,8.9-2.6,13.3-4.1c4.5-1.5,9-3.2,14.3-4.1c-2.6,3.6-5.1,7.4-7.9,10.9c-11.6,14.7-25,27.6-39.7,39.1
+                c-1.5,1.2-2.8,3.8-2.7,5.6c0.8,35.5-4.2,70.1-15.7,103.7c-22.6,66.2-62,119.8-121.1,158.1c-29.2,18.9-61.1,31.3-95.2,38.5
+                c-33.8,7.1-67.8,8.4-101.9,4.4c-34.2-4-66.7-14.1-97.3-29.9c-8.1-4.1-15.9-8.7-23.8-13.1C3.6,441.3,3.8,440.9,4,440.5z"/>
+        </g>
+    </symbol>
+
+    <symbol id="linkedin" viewBox="0 0 478.165 478.165">
+        <g>
+            <path id="LinkedIn_3_" d="M478.165,290.794v176.742H375.638V302.549c0-41.481-14.783-69.673-51.881-69.673
+                c-28.371,0-45.107,19.087-52.578,37.456c-2.69,6.615-3.507,15.879-3.507,25.024v172.159H165.246c0,0,1.375-279.328,0-308.257
+                h102.447v43.692c-0.139,0.359-0.438,0.657-0.578,1.056h0.578v-1.056c13.687-20.999,37.934-50.925,92.385-50.925
+                C427.659,152.026,478.165,196.077,478.165,290.794z M57.997,10.629C22.952,10.629,0,33.621,0,63.945
+                c0,29.507,22.275,53.276,56.682,53.276H57.3c35.822,0,58.017-23.769,58.017-53.276C114.62,33.621,93.123,10.629,57.997,10.629z
+                M6.117,467.535h102.467V159.239H6.117V467.535z"/>
+        </g>
+    </symbol>
+</svg>
+
+<!-- ScrollUp-->
+
+<a class="scrollup"></a>
+
+<!-- Header -->
+
+<header class="header" >
+    <div class="container" >
+        <div class="header__inner">
+            <nav class="nav">  <!--menu active-->
+                <div class="nav__item">
+                    <a class="nav__link" href="#home" id="anchor1">Home</a>
+                    <a class="nav__link" href="#about" id="anchor2">About Us</a>
+                    <a class="nav__link" href="#team" id="anchor3">Team</a>
+                </div>
+
+                <a class="nav__logo" href="#gallery" id="anchor7">
+                    <img src="img/header/logo.png" alt="">
+                </a>
+
+                <div class="nav__item">
+                    <a class="nav__link" href="#services" id="anchor4">Services</a>
+                    <a class="nav__link" href="#blog" id="anchor5">Blog</a>
+                    <a class="nav__link" href="#contact" id="anchor6">Contact Us</a>
+                </div>
+                
+                <div class="menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Intro -->
+
+<section class="intro" id="home">
+    <div class="container">
+        <div class="intro__inner">
+            <div class="intro__img">
+                <img src="img/intro/logo.png" alt="">
+            </div>
+            <h1 class="intro__title">We build it with passion</h1>
+            <h2 class="intro__subtitle">Just to be clear, we do this for fun not for you, just kidding</h2>
+            <a class="btn intro-margin" href="#">Read More</a>
+        </div>
+    </div>
+</section>
+
+<!-- Aside -->
+
+<!-- <aside class="aside">
+    <div class="aside__inner">
+
+            <p>Choose your features:</p>
+            <div class="checkbox aside__margin__top">
+                <label class="checkbox__item">One
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                  
+                <label class="checkbox__item">Two
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                  
+                <label class="checkbox__item">Three
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                  
+            </div>
+
+            <p>Choose your contact method:</p>
+            <div class="radio aside__margin__top">
+                <label class="radio__item">Email
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark__radio"></span>
+                </label>
+                  
+                <label class="radio__item">Phone
+                    <input type="radio" name="radio">
+                    <span class="checkmark__radio"></span>
+                </label>
+                  
+                <label class="radio__item">Mail
+                    <input type="radio" name="radio">
+                    <span class="checkmark__radio"></span>
+                </label>
+
+            </div>
+
+            <p class="aside__margin__bot">Choose your theme:</p>
+            <div cclass="select aside__margin__top">
+                <select>
+                    <option value="1">Blue</option>
+                    <option value="2">Green</option>
+                    <option value="3">Yellow</option>
+                    <option value="4">Red</option>
+                    <option value="5">Orange</option>
+                    <option value="6">black</option>
+                </select>
+            </div>
+
+        <div class="aside__btn aside__margin__top">
+            <a class="btn aside-margin" href="#">Submit</a>
+            <a class="btn aside-margin" href="#">Reset</a>
+        </div>
+    </div>
+</aside> -->
+
+<!-- About -->
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="about__inner">
+
+            <div class="about__line">
+                <div class="about__left">
+                    <div class="about__item" id="about__anchor1">
+                        <div class="about__date">2011</div>
+                        <div class="about__text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiselit.</p>
+                            <p>Vivamus varius nec diam vitae hendrerit bigus mit.</p>
+                        </div>
+
+                        <div class="comment">
+                            <div class="comment__inner">
+                                <img class="comment__img" src="img/team/team-1.png" alt="">
+                                <div class="comment__name">Mark Once</div>
+                                
+                                <div class="social">
+                                    <a class="social__item" href="#" target="_blank">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#twitter"></use>
+                                        </svg>
+                                    </a>
+
+                                    <a class="social__item" href="#" target="_blank">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="comment__text">"Lorem ipsum dolor..."</div>
+                        </div>
+                    </div>
+                        
+                    <div class="about__item" id="about__anchor2">
+                        <div class="about__date">2013</div>
+                        <div class="about__text">
+                            <p>Sed at auctor sem, nec tincidunt elit. Pellentesque</p>
+                            <p>enim turpis, porttitor ac orci in, ultrices efficitur nisl.</p> 
+                            <p>Ut odio libero, sodales a tellus eleifend, suscipit</p>
+                            <p>dapibus mi.</p>
+                        </div>
+
+                        <div class="comment comment__margin2">
+                            <div class="comment__inner">
+                                <img class="comment__img" src="img/team/team-2.png" alt="">
+                                <div class="comment__name">Mark Once</div>
+                                
+                                <div class="social">
+                                    <a class="social__item" href="#" target="_blank">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#twitter"></use>
+                                        </svg>
+                                    </a>
+
+                                    <a class="social__item" href="#" target="_blank">
+                                        <svg class="social__icon">
+                                            <use xlink:href="#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="comment__text">"Lorem ipsum dolor..."</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about__right">
+                <div class="about__item" id="about__anchor3">
+                    <div class="about__date">2012</div>
+                    <div class="about__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiselit.</p>
+                        <p>Vivamus varius nec diam vitae hendrerit bigus mit.</p>
+                        <p>Begitus vit urna nulla.</p>
+                    </div>
+
+                    <div class="comment comment__margin">
+                        <div class="comment__inner">
+                            <img class="comment__img" src="img/team/team-3.png" alt="">
+                            <div class="comment__name">Mark Once</div>
+                            
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="comment__text">"Lorem ipsum dolor..."</div>
+                    </div>
+                </div>
+
+                <div class="about__item" id="about__anchor4">
+                    <div class="about__date">2014</div>
+                    <div class="about__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiselit.</p>
+                        <p>Vivamus varius nec diam vitae hendrerit bigus mit.</p> 
+                        <p>Begitus vit urna nulla.</p>
+                    </div>
+
+                    <div class="comment comment__margin">
+                        <div class="comment__inner">
+                            <img class="comment__img" src="img/team/team-1.png" alt="">
+                            <div class="comment__name">Mark Once</div>
+                            
+                            <div class="social">
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#twitter"></use>
+                                    </svg>
+                                </a>
+
+                                <a class="social__item" href="#" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="comment__text">"Lorem ipsum dolor..."</div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <div class="about__dots">
+        <span class="dot" id="dot__anchor1"></span>
+        <span class="dot d-2" id="dot__anchor3"></span>
+        <span class="dot d-3" id="dot__anchor2"></span>
+        <span class="dot d-4" id="dot__anchor4"></span>
+    </div>
+</section>
+
+<!-- Team -->
+
+<section class="team" id="team">
+    <div class="container">
+
+        <div class="team__intro">
+            <div class="team__title">This is our team</div>
+            <div class="team__text">We are small and effective and...</div>
+        </div>
+
+        <div class="team__inner">
+
+            <div class="team__item">
+                <img class="team__photo" src="img/team/team-1.png" alt="">
+                <div class="team__name">Mark Once</div>
+                <div class="team__prof">Designer & Front-End Developer</div>
+                
+                <div class="social">
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                     </a>
+
+                     <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                     </a>
+                </div>
+            </div>
+
+            <div class="team__item m-0">
+                <img class="team__photo" src="img/team/team-2.png" alt="">
+                <div class="team__name">Justin Twice</div>
+                <div class="team__prof">Founder & CEO</div>
+
+                <div class="social">
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                     </a>
+
+                     <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                     </a>
+                </div>
+            </div>
+
+            <div class="team__item">
+                <img class="team__photo" src="img/team/team-3.png" alt="">
+                <div class="team__name">Mark Once</div>
+                <div class="team__prof">Someone & Somewhere</div>
+
+                <div class="social">
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                     </a>
+
+                     <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#linkedin"></use>
+                        </svg>
+                     </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Gallery -->
+
+<section class="gallery" id="gallery">
+
+    <div class="gallery__intro">
+        <div class="gallery__title">This is our works</div>
+        <div class="gallery__text">So pretty and awesome...</div>
+    </div>
+
+    <div class="works">
+        <a class="works__item" href="work__item1.html">
+            <img class="works__photo" src="img/works/work1.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Incididunt Ut</div>
+                <div class="works__text">User Interface Design</div>
+            </div>
+        </a>
+
+        <a class="works__item" href="work__item2.html">
+            <img class="works__photo" src="img/works/work2.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Adipiscing Elit</div>
+                <div class="works__text">User Interface Design</div>
+            </div>
+        </a>
+
+        <a class="works__item" href="work__item3.html">
+            <img class="works__photo" src="img/works/work3.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Voluptate Velit</div>
+                <div class="works__text">User Interface Design</div>
+            </div>
+        </a>
+
+        <a class="works__item" href="work__item4.html">
+            <img class="works__photo" src="img/works/work4.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Cillum Dolore</div>
+                <div class="works__text">User Interface Design</div>
+            </div>
+        </a>
+
+        <a class="works__item" href="work__item5.html">
+            <img class="works__photo" src="img/works/work5.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Qui Officia</div>
+                <div class="works__text">User Interface Design</div>
+            </div>
+        </a>
+
+        <a class="works__item" href="work__item6.html">
+            <img class="works__photo" src="img/works/work6.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Quis Nostrud</div>
+                <div class="works__text">User Interface Design</div>
+            </div>
+        </a>
+
+        <a class="works__item" href="work__item7.html">
+            <img class="works__photo" src="img/works/work7.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Vitae Dicta</div>
+                <div class="works__text">User Interface Design</div>
+            </div>
+        </a>
+
+        <a class="works__item" href="work__item8.html">
+            <img class="works__photo" src="img/works/work8.jpg" alt="">
+            <div class="works__content">
+                <div class="works__title">Labore Cet</div>
+                <div class="works__text">User Interface Design</div>
+            </div>
+        </a>   
+    </div>
+</section>
+
+<!-- Services -->
+
+<section class="services" id="services">
+    <div class="container">    
+        <div class="services__intro">
+            <div class="services__title">We provide you everything</div>
+            <div class="services__text">Maybe not everything, but we provide some stuff.</div> 
+        </div>
+
+        <div class="services__inner">
+            <div class="reviews__slider" id="reviewsSlider">
+
+                <div class="slick-item">
+                    <div class="services__item">
+                        <img class="services__img" src="img/services/services-1.png" alt="">
+                        <div class="services__name">Some Analytics</div>
+                        <div class="services__info">Aenean nisi lectus, convallis non lorem sit <br> amet, rhoncus malesuada justo</div>
+                    </div>
+                </div>    
+
+                <div class="slick-item">
+                    <div class="services__item">
+                        <img class="services__img" src="img/services/services-2.png" alt="">
+                        <div class="services__name">We provide you Develop</div>
+                        <div class="services__info">Aenean nisi lectus, convallis non lorem sit <br> amet, rhoncus malesuada justo</div>
+                    </div>
+                </div>
+                
+                <div class="slick-item">
+                    <div class="services__item">
+                        <img class="services__img" src="img/services/services-3.png" alt="">
+                        <div class="services__name">And Some Cloud</div>
+                        <div class="services__info">Aenean nisi lectus, convallis non lorem sit <br> amet, rhoncus malesuada justo</div>
+                    </div>
+                </div>
+
+                <div class="slick-item">
+                    <div class="services__item">
+                        <img class="services__img" src="img/services/services-1.png" alt="">
+                        <div class="services__name">Some Analytics</div>
+                        <div class="services__info">Aenean nisi lectus, convallis non lorem sit <br> amet, rhoncus malesuada justo</div>
+                    </div>
+                </div>    
+
+                <div class="slick-item">
+                    <div class="services__item">
+                        <img class="services__img" src="img/services/services-2.png" alt="">
+                        <div class="services__name">We provide you Develop</div>
+                        <div class="services__info">Aenean nisi lectus, convallis non lorem sit <br> amet, rhoncus malesuada justo</div>
+                    </div>
+                </div>
+                
+                <div class="slick-item">
+                    <div class="services__item">
+                        <img class="services__img" src="img/services/services-3.png" alt="">
+                        <div class="services__name">And Some Cloud</div>
+                        <div class="services__info">Aenean nisi lectus, convallis non lorem sit <br> amet, rhoncus malesuada justo</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog -->
+
+    <div class="blog">
+        <div class="blog__inner" id="blog">
+            <a class="btn services-btn" href="#">Visit Our Blog</a>
+        </div>
+        
+    </div>    
+
+</section>
+
+<!-- Contact Us -->
+
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact__intro">
+            <div class="contact__title">We provide you everything</div>
+            <div class="contact__text">Maybe not everything, but we provide some stuff.</div> 
+        </div>
+
+        <div class="contact__inner">
+            <div class="contact__item">
+                <img class="contact__img" src="img/contact/contact-1.png" alt="">
+                <div class="contact__info">+375-29-346-98-71<br>+375-44-540-20-31</div>
+            </div>
+
+            <div class="contact__item">
+                <img class="contact__img" src="img/contact/contact-2.png" alt="">
+                <div class="contact__info">Surganova 3, 213414<br>10:00-17:00, Mn-Fr</div>
+            </div>
+
+            <div class="contact__item">
+                <img class="contact__img" src="img/contact/contact-3.png" alt="">
+                <div class="contact__info">info@marko.by<br>sales@marko.by</div>
+            </div>
+        </div>
+
+        <div class="contact__input">
+            <input class="contact__input__pane btn-h" type="text" placeholder="Full Name">
+            <input class="contact__input__pane btn-h" type="text" placeholder="Email">
+            <input class="contact__input__pane btn-h" type="text" placeholder="Number">
+            <textarea class="contact__input__pane" type="text" placeholder="Write your Message here..."></textarea>
+            <a class="btn-long btn-h" href="#">Submit</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="copyright">
+            Copyright © Alex Werac. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- Js -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="app.js" defer></script>
+
+</body>
+</html>
